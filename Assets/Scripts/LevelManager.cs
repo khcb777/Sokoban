@@ -11,10 +11,9 @@ public class LevelManager : MonoBehaviour
         // Перезагружаем сцену
         SceneManager.LoadScene(currentSceneIndex);
     }
-    
-    // Вызов этого метода при нажатии кнопки "Рестарт" или при поражении
-    public void OnRestartButtonClicked()
-    {
-        ReloadLevel();
+
+    public void Load(int idScene)
+    { 
+        SceneManager.LoadScene(idScene);
     }
 }
